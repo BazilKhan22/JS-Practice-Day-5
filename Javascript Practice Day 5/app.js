@@ -17,4 +17,19 @@ document.getElementById("toggleTheme").addEventListener("click", function () {
 
     document.body.className = newTheme; // ✅ Theme Apply
     localStorage.setItem("theme", newTheme); // ✅ Theme Save in localStorage
-});
+});s
+
+// get set exercise by local storage
+
+localStorage.setItem("name", "Ali");
+let userName = localStorage.getItem("name");
+console.log(userName); // Expected Output: "Ali"
+
+
+// next exercise
+
+localStorage.setItem("age", "25");
+console.log(localStorage.getItem("age")); // Expected Output: "25"
+
+localStorage.removeItem("age");
+console.log(localStorage.getItem("age")); // Expected Output: null
